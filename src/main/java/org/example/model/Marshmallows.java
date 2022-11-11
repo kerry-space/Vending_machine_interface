@@ -13,12 +13,14 @@ public class Marshmallows implements Product {
     }
     @Override
     public String examine() {
-        return null;
+        return "{ id: " + getId() + ", Marshmallow: " + getProductName() + " }";
+
     }
 
     @Override
     public String use() {
-        return null;
+
+        return "Here is Your Marshmallow "+getProductName();
     }
 
     @Override
